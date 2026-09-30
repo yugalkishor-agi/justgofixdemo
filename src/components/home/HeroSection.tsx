@@ -1,4 +1,4 @@
-import { ChevronDown, ArrowRight } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { InteractiveHoverButton } from './Interactive-hover-button'
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Star, Quote } from 'lucide-react'
 import { InteractiveHoverButton } from './Interactive-hover-button'
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { ShieldCheck, Clock, Award, ThumbsUp } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { InteractiveHoverButton } from './Interactive-hover-button'

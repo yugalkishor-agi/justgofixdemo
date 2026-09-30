@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react'
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion'
-import { ArrowUpRight } from 'lucide-react'
 import { InteractiveHoverButton } from './Interactive-hover-button'
 
 import RoCover from '../../../assets/Ro_cover.png'
