@@ -10,8 +10,8 @@ const HowWeWorkSection = () => {
   ]
 
   return (
-    <section id="how-it-works" className="py-32 bg-white">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 text-center">
+    <section id="how-it-works" className="py-20 md:py-32 bg-white">
+      <div className="max-w-[1400px] mx-auto px-5 md:px-12 text-center">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -19,7 +19,7 @@ const HowWeWorkSection = () => {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="mb-24"
         >
-          <h2 className="text-6xl md:text-8xl font-bold text-[#0D120B] tracking-tighter">
+          <h2 className="text-4xl sm:text-6xl md:text-8xl font-bold text-[#0D120B] tracking-tighter">
             How We Work.
           </h2>
         </motion.div>

@@ -5,14 +5,14 @@ import LoadingVideo from '../../../assets/Loading.webm'
 const Footer = () => {
   return (
     <footer className="bg-[#0b2d61] text-white pt-16 pb-6 relative z-10">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16">
-          <div className="lg:col-span-6 pr-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-2 lg:grid-cols-12 gap-8 mb-12 sm:mb-16">
+          <div className="col-span-2 lg:col-span-6 pr-0 sm:pr-8">
             <div className="flex items-center mb-8 relative">
               <img src="/logo.png" alt="JustGoFix" className="h-16 w-auto brightness-0 invert relative z-10" />
               <video 
                 src={LoadingVideo} 
-                className="h-40 w-40 object-contain -ml-8 relative z-0" 
+                className="h-24 sm:h-40 w-24 sm:w-40 object-contain -ml-5 sm:-ml-8 relative z-0" 
                 autoPlay 
                 loop 
                 muted 

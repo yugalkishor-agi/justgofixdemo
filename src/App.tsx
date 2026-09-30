@@ -36,7 +36,7 @@ const App = () => {
   }, [])
 
   return (
-    <div className="min-h-screen flex flex-col font-sans text-slate-900 bg-white">
+    <div className="min-h-screen flex flex-col font-sans text-slate-900 bg-white" style={{ overflowX: 'clip' }}>
       <Navbar />
       <main className="flex-grow pt-20">
         <HeroSection />

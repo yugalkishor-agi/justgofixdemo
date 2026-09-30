@@ -13,9 +13,9 @@ const FAQSection = () => {
   const [openIdx, setOpenIdx] = useState<number | null>(null)
 
   return (
-    <section id="faq" className="h-full w-full py-16 md:py-24 bg-[#050505] text-white flex flex-col justify-center overflow-hidden">
-      <div className="max-w-[1400px] w-full mx-auto px-6 md:px-12">
-        <div className="flex flex-col lg:flex-row gap-16 lg:gap-32">
+    <section id="faq" className="h-full w-full py-14 md:py-24 bg-[#050505] text-white flex flex-col justify-center overflow-hidden">
+      <div className="max-w-[1400px] w-full mx-auto px-5 md:px-12">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-32">
           
           <div className="lg:w-1/3">
             <motion.div
@@ -27,7 +27,7 @@ const FAQSection = () => {
               <h2 className="text-sm font-semibold tracking-widest uppercase mb-6 text-gray-400">
                 FAQ
               </h2>
-              <h3 className="font-technor text-5xl md:text-7xl font-bold tracking-tighter leading-[1.1]">
+              <h3 className="font-technor text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter leading-[1.1]">
                 Have <br className="hidden lg:block" /> Questions?
               </h3>
               <p className="mt-8 text-gray-400 text-lg md:text-xl leading-relaxed max-w-sm">
@@ -55,7 +55,7 @@ const FAQSection = () => {
                       aria-expanded={isOpen}
                       aria-controls={`faq-answer-${idx}`}
                     >
-                      <span className={`text-2xl md:text-3xl font-medium tracking-tight transition-colors duration-300 ${isOpen ? 'text-white' : 'text-gray-300 group-hover:text-white'}`}>
+                      <span className={`text-lg sm:text-2xl md:text-3xl font-medium tracking-tight transition-colors duration-300 ${isOpen ? 'text-white' : 'text-gray-300 group-hover:text-white'}`}>
                         {faq.q}
                       </span>
                       <div className={`ml-6 flex-shrink-0 w-12 h-12 rounded-full border flex items-center justify-center transition-all duration-300 ${isOpen ? 'bg-white text-black border-white' : 'bg-transparent text-white border-white/20 group-hover:border-white group-focus-visible:border-white'}`}>
@@ -72,7 +72,7 @@ const FAQSection = () => {
                           transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                           className="overflow-hidden"
                         >
-                          <div className="pb-8 pr-12 text-gray-400 text-lg md:text-xl leading-relaxed">
+                          <div className="pb-8 pr-4 sm:pr-12 text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed">
                             {faq.a}
                           </div>
                         </motion.div>

@@ -12,8 +12,8 @@ const WhyChooseSection = () => {
   ]
 
   return (
-    <section id="why-us" className="py-32 bg-[#F4F5F0]">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+    <section id="why-us" className="py-20 md:py-32 bg-[#F4F5F0]">
+      <div className="max-w-[1400px] mx-auto px-5 md:px-12">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -21,10 +21,10 @@ const WhyChooseSection = () => {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="mb-24"
         >
-          <h2 className="font-technor text-6xl md:text-8xl font-bold text-[#0D120B] tracking-tighter mb-8 leading-[0.9]">
+          <h2 className="font-technor text-4xl sm:text-5xl md:text-8xl font-bold text-[#0D120B] tracking-tighter mb-6 sm:mb-8 leading-[0.9]">
             Why Choose<br/>JustGoFix?
           </h2>
-          <p className="text-[#0D120B]/60 text-xl md:text-2xl max-w-2xl font-medium tracking-tight">
+          <p className="text-[#0D120B]/60 text-base sm:text-xl md:text-2xl max-w-2xl font-medium tracking-tight">
             Discover what makes JustGoFix your go-to solution for instant, professional home services.
           </p>
         </motion.div>
@@ -34,11 +34,11 @@ const WhyChooseSection = () => {
           <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#F4F5F0] to-transparent z-10 pointer-events-none" />
           <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#F4F5F0] to-transparent z-10 pointer-events-none" />
 
-          <div className="flex gap-x-12 w-max animate-marquee hover:[animation-play-state:paused] pr-12">
+          <div className="flex gap-x-6 sm:gap-x-12 w-max animate-marquee hover:[animation-play-state:paused] pr-6 sm:pr-12">
             {[...reasons, ...reasons].map((item, idx) => (
               <div 
                 key={idx} 
-                className="w-[350px] shrink-0 group p-8 rounded-[2rem] border border-[#0D120B]/10 bg-[#F4F5F0] hover:bg-white hover:shadow-2xl transition-all duration-300"
+                className="w-[280px] sm:w-[350px] shrink-0 group p-6 sm:p-8 rounded-[2rem] border border-[#0D120B]/10 bg-[#F4F5F0] hover:bg-white hover:shadow-2xl transition-all duration-300"
               >
                 <div className="mb-8 w-16 h-16 flex items-center justify-center border border-[#0D120B]/20 rounded-2xl group-hover:bg-[#0D120B] group-hover:text-white transition-colors duration-300">
                   {item.icon}

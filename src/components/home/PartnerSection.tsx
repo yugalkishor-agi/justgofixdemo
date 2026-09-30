@@ -3,15 +3,15 @@ import { motion } from 'framer-motion'
 
 const PartnerSection = () => {
   return (
-    <section className="py-32 bg-[#414CFF] text-white overflow-hidden relative">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
+    <section className="py-20 md:py-32 bg-[#414CFF] text-white overflow-hidden relative">
+      <div className="max-w-[1400px] mx-auto px-5 md:px-12 relative z-10">
         <div className="flex flex-col lg:flex-row justify-between items-end mb-24 gap-8">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="text-6xl md:text-8xl font-bold tracking-tighter max-w-2xl leading-[0.9]"
+            className="text-4xl sm:text-6xl md:text-8xl font-bold tracking-tighter max-w-2xl leading-[0.9]"
           >
             Partner With Us.
           </motion.h2>

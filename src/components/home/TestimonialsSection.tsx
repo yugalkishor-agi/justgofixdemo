@@ -3,11 +3,11 @@ import { InteractiveHoverButton } from './Interactive-hover-button'
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-28 bg-slate-50 relative overflow-hidden">
+    <section className="py-20 sm:py-28 bg-slate-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="font-technor text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">Loved by Homeowners</h2>
-          <p className="text-slate-500 text-xl max-w-2xl mx-auto">See why thousands of people trust JustGoFix for their daily maintenance and repair needs.</p>
+          <h2 className="font-technor text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 sm:mb-6 tracking-tight">Loved by Homeowners</h2>
+          <p className="text-slate-500 text-base sm:text-xl max-w-2xl mx-auto">See why thousands of people trust JustGoFix for their daily maintenance and repair needs.</p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
@@ -16,7 +16,7 @@ const TestimonialsSection = () => {
             { name: 'David Chen', role: 'Property Manager', text: 'JustGoFix has been a lifesaver for our rental properties. It is so easy to book an electrician or handyman in an emergency.', img: '11' },
             { name: 'Emily Rodriguez', role: 'Homeowner', text: 'I booked a painting service and they did a flawless job. The app is super intuitive and customer support is incredibly responsive.', img: '12' },
           ].map((item, idx) => (
-            <div key={idx} className="bg-white p-10 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 relative group hover:-translate-y-2 transition-transform duration-300">
+            <div key={idx} className="bg-white p-6 sm:p-10 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 relative group hover:-translate-y-2 transition-transform duration-300">
               <Quote className="absolute top-10 right-10 text-slate-100 rotate-180" size={60} />
               <div className="flex text-amber-400 mb-8 relative z-10">
                 {[1,2,3,4,5].map(s => <Star key={s} size={22} fill="currentColor" className="mr-1" />)}
@@ -37,15 +37,15 @@ const TestimonialsSection = () => {
         </div>
         
         {/* App Download CTA banner */}
-        <div className="mt-32 bg-blue-600 rounded-[3rem] p-12 md:p-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden shadow-2xl shadow-blue-600/30">
+        <div className="mt-20 sm:mt-32 bg-blue-600 rounded-[2rem] sm:rounded-[3rem] p-8 sm:p-12 md:p-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden shadow-2xl shadow-blue-600/30">
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
           <div className="relative z-10 max-w-xl text-center md:text-left mb-10 md:mb-0">
-            <h3 className="font-technor text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Get the JustGoFix App</h3>
-            <p className="text-blue-100 text-lg md:text-xl">Book services, track professionals in real-time, and manage your bookings easily from your phone.</p>
+            <h3 className="font-technor text-2xl sm:text-3xl md:text-5xl font-extrabold text-white mb-4 sm:mb-6 leading-tight">Get the JustGoFix App</h3>
+            <p className="text-blue-100 text-base sm:text-lg md:text-xl">Book services, track professionals in real-time, and manage your bookings easily from your phone.</p>
           </div>
-          <div className="relative z-10 flex flex-col sm:flex-row gap-6">
-            <InteractiveHoverButton text="App Store" className="w-56 py-4 text-lg bg-slate-900 text-white border-none" />
-            <InteractiveHoverButton text="Google Play" className="w-56 py-4 text-lg border-none" />
+          <div className="relative z-10 flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
+            <InteractiveHoverButton text="App Store" className="w-full sm:w-56 py-4 text-lg bg-slate-900 text-white border-none" />
+            <InteractiveHoverButton text="Google Play" className="w-full sm:w-56 py-4 text-lg border-none" />
           </div>
         </div>
       </div>
