@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion'
 import { InteractiveHoverButton } from './Interactive-hover-button'
+import { MessageCircle, Phone } from 'lucide-react'
 
 import RoCover from '../../../assets/Ro_cover.png'
 import RoBg from '../../../assets/Ro_bg.jpg'
@@ -225,20 +226,41 @@ const ServicesSection = () => {
             </div>
           </div>
 
-          {/* Right Column - Description */}
-          <div className="lg:col-span-2 flex items-center h-24 relative pl-4 lg:pl-0">
-            <AnimatePresence>
-              <motion.p
-                key={activeIndex}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute inset-0 text-white font-bold text-sm md:text-base leading-relaxed flex items-center"
+          {/* Right Column - Description and Actions */}
+          <div className="lg:col-span-2 flex flex-col justify-center gap-6 h-full relative pl-4 lg:pl-0 mt-8 lg:mt-0">
+            <div className="h-24 relative w-full">
+              <AnimatePresence>
+                <motion.p
+                  key={activeIndex}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                  className="absolute inset-0 text-white font-bold text-sm md:text-base leading-relaxed flex items-center"
+                >
+                  {services[activeIndex].desc}
+                </motion.p>
+              </AnimatePresence>
+            </div>
+            
+            <div className="flex flex-col gap-3 w-full">
+              <a 
+                href={`https://wa.me/919204946507?text=Hi, I want to book ${encodeURIComponent(services[activeIndex].title)} service.`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 bg-[#25D366] text-white px-4 py-3 rounded-full font-bold text-sm hover:bg-[#1ebd5b] transition-all hover:scale-105 shadow-lg"
               >
-                {services[activeIndex].desc}
-              </motion.p>
-            </AnimatePresence>
+                <MessageCircle size={18} />
+                WhatsApp
+              </a>
+              <a 
+                href="tel:+919204946507" 
+                className="flex items-center justify-center gap-2 bg-white text-blue-950 px-4 py-3 rounded-full font-bold text-sm hover:bg-slate-100 transition-all hover:scale-105 shadow-lg"
+              >
+                <Phone size={18} />
+                Call Now
+              </a>
+            </div>
           </div>
 
         </div>
